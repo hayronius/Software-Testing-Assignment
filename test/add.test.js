@@ -38,4 +38,12 @@ describe("Add", () => {
     it("Total is negative", () =>{
         expect(add(3,-5)).to.equal(-2)
     });
+
+    it("Adding past integer max value", () =>{
+        expect(add(2147483647,10)).to.equal(2147483657) // 2147483647 is max
+    });
+
+    it("Adding past integer min value", () =>{
+        expect(add(-2147483648,-10)).to.equal(-2147483658) // -2147483648 is min
+    });
 })
