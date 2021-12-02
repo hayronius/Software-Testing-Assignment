@@ -44,14 +44,3 @@ describe("isEmpty", () => {
         expect(isEmpty({})).to.equal(true)
     });
 })
-
-
-
-
-
-
-/*
-it("", () =>{
-    expect().to.equal()
-});
-*/
