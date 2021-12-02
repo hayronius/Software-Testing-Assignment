@@ -6,7 +6,7 @@ describe("Add", () => {
     it("adds two numbers", () =>{
         expect(add(3,6)).to.equal(9)
     });
-    
+
     it("Giving one number returns the number itself", () =>{
         expect(add(5)).to.equal(5)
     });
@@ -21,6 +21,10 @@ describe("Add", () => {
 
     it("Addend is zero", () =>{
         expect(add(5,0)).to.equal(5)
+    });
+
+    it("Total is zero", () =>{
+        expect(add(5,-5)).to.equal(0)
     });
 
     it("Augend is negative", () =>{
