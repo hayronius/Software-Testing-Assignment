@@ -76,7 +76,7 @@ describe("Ceil, rounding numbers using precision parameter", () => {
     });
 
     it("Zero with negative precision", () =>{
-        expect(ceil(0, -2)).to.equal(100)
+        expect(ceil(0, -2)).to.equal(0)
     });
 
     it("Input has less digits than wanted precision", () =>{
